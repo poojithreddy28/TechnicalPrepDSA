@@ -4,7 +4,7 @@
 #     else:
 #         return {'message': 'Artist not found'}
 
-# #TC : O(1)=
+## TC : O(1)
 # festival_schedule = {
 #     "Blood Orange": {"day": "Friday", "time": "9:00 PM", "stage": "Main Stage"},
 #     "Metallica": {"day": "Saturday", "time": "8:00 PM", "stage": "Main Stage"},
