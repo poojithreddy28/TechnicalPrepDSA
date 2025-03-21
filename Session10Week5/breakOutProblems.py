@@ -208,15 +208,17 @@ def print_linked_list(head):
         current = current.next
 
 def copy_ll(head):
+    # copy = Node(head.value)
+    # if head.next:
+    #     copy.next = copy_ll(head.next)  
+    # return copy
+    copy = Node(head.value)
     current = head
-    new_head = None
-    while current:
-        new_node = Node(current.value)
-        if not new_head:
-            new_head = new_node
-        if current.next:
-            new_node.next = Node(current.next.value)
+    new_head = copy
+    while current.next:
         current = current.next
+        copy.next = Node(current.value)
+        copy = copy.next
     return new_head
 
     
